@@ -1,0 +1,20 @@
+Objectives:
+    -Figure out how to load the binary matrix (currently in components folder) and simply just print it
+    -Next, modify the Grid constructor to check the state for a state change, triggered by the button, and construct the grid w/ the file as reference or normally dependent on state
+    
+    -Once we can, at a minimum, load the txt grids and stuff, we can begin working on writing the actual A* algorithm
+
+    -BEFORE working on algorithm:
+        -Create a "starting" cell css class
+        -Create an "ending" cell css class
+        -Use event handlers to setthe start and end cells
+
+    -A* Algorithm:
+        -
+
+
+
+    -Other things to consider:
+        -Allowing users to draw their own walls
+        -Adding animation
+        -Allowing users to change the size of their grid

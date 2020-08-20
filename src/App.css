@@ -1,0 +1,71 @@
+.OuterWrapper{
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
+  display: block;
+}
+
+.MainNav{
+  width: 100vw;
+  height: 7vh;
+  margin: 0;
+  padding-left: 15px;
+
+}
+.cell {
+  width: 30px;
+  height: 19px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+.row{
+  display: table-row;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.Grid{
+  display: table;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+
+}
+
+.node-visited {
+  background-color: yellow;
+}
+
+
+.Wall{
+  background-color: rgba(0,0,0,0.9);
+}
+
+.Start{
+  background-color: green;
+}
+
+.End{
+  background-color: red;
+}
+
+.btn-secondary{
+  margin-right: 7px;
+}
+
+.dropdownButton{
+  height: 100%;
+}
+
+.DropdownMenu{
+  max-height: 75vh;
+  overflow: auto;
+  scrollbar-color: black;
+}
+
+.gridSelector{
+  display: inline-flex;
+}
