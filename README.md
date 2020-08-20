@@ -24,10 +24,10 @@ Each cell in my implementation requires 6 integers, two booleans, a string, and 
 
 Assuming my grids are generated using a randomness approach, where 30% of the cells are walls, we can assume that 30% of the cells will require a string of length 4, one will require a string of length 5, and one will require a string of length 3. For a gridworld of size 1001 by 1001, that means a total of 1,002,001 cells. 30% of this is about 300,600. So, in order to accompany a grid of size 1001x1001, we would need:
 
->**Bytes required by each cell:**
+>**Bytes required by each cell:**<br>
 1,002,001 * [(6 * 4) + (2 * 1) + (1 * 8)] = 34,068,034
 
->**Bytes required by cells with a string:**
+>**Bytes required by cells with a string:**<br>
 (300,600 * 4) + 5 + 3 = 1,202,408
 
 >34,068,034 + 1,202,408 = 35,270,442 bytes, or 35.270442 MB
@@ -36,7 +36,7 @@ This could be dramatically reduced if I did not store some of the design-related
 
 Knowing that 70% of the cells in the grid require (6 * 4) + (2 * 1) + (1 * 8) = 34 bytes and 30% of the cells in the grid require 34 + 4 = 38 bytes, and that the start and end nodes will require 39 and 37 bytes respectively, we can use these values to calculate the maximum size of a grid that my implementation can run on if 4MB are available. The equation is shown below
 
->39 + 37 + (0.3x * 38) + (0.7x * 34)= 400,000
+>39 + 37 + (0.3x * 38) + (0.7x * 34)= 400,000<br>
 x = number of nodes in the grid, 400,000 is 4MB converted to bytes
 
 When solved, we find that x is about equal to 11361. The square root of 11361 is 106.6, so the maximum grid size that my implementation can handle with 4MB available is 106x106.
